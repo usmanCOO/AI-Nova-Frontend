@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Glacier";
+  src: local("Glacier"),
+    url(./assets/fonts/Glacier/Glacier-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "glacial-indifference";
+  src: local("glacial-indifference"),
+    url(./assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf)
+      format("truetype");
+}
+body {
+  font-family: glacial-indifference;
+}
+.btn-style {
+  background-image: linear-gradient(to left, #5ea7f9, #6073fa, #887dfb);
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+.btn-style:hover {
+  background-position: right center;
+}
+.text-color {
+  background: linear-gradient(to right, #5ea7f9, #6073fa, #887dfb);
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.button-color {
+  background: linear-gradient(to right, white, #ff81d1);
+}
+.navbar {
+  width: max-content !important;
+  background-color: #eef7fc;
+}
+
+._1ceqH ._1lB9c {
+  display: none !important;
+  justify-content: space-between;
+  background: #bd9f61;
+  align-items: center;
+  padding: 20px 20px;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+
+._1ceqH ._3bC73 ._1dpop {
+  position: absolute;
+  transform: translateX(-50%);
+  /* bottom: 20px; */
+  top: 98px !important;
+}
+
+/*microphone  */
+._1ceqH ._1dpop {
+  width: 60px;
+  display: flex;
+  height: 60px;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease all;
+  background: #9cabba !important;
+  border-radius: 50%;
+  bottom: 65px;
+  right: 20%;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 36px !important;
+}
+._1ceqH ._dt3-T {
+  min-height: 400px;
+  background: transparent !important;
+  border-radius: 0 0 3px 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+._1Yplu {
+  display: none !important;
+}
+
+/* press the mike class */
+._1ceqH ._1YOWG ._eV_dK {
+  color: #fff;
+}
+
+/* timer and text */
+._1ceqH ._3bC73 ._1YOWG {
+  position: static !important;
+  left: auto !important;
+  transform: none !important ;
+  bottom: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* pause and play button */
+._1ceqH ._qxztz {
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+  bottom: 0px;
+  padding-left: 0px !important;
+  display: flex;
+}
+._qxztz {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding-left: 53px !important;
+}
+
+/* stop button */
+._1ceqH ._qxztz ._1bSom {
+  background: #d3b1ff !important;
+  position: relative;
+}
+
+._1ceqH ._qxztz ._2uz65 {
+  width: 50px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+._2uz65 ._1bSom {
+  background: #d3b1ff !important;
+}
+
+._1ceqH ._qxztz ._3nQu5 {
+  background: #d3b1ff !important;
+  position: relative;
+}
+._eV_dK {
+  display: none;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open label {
+  color: black !important;
+  background-color: #d3b1ff;
+  border-radius: 4%;
+  padding: 10px !important;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  inset: 0px !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  padding: 0px !important;
+  border: none !important;
+  background: none !important;
+  width: 80% !important;
+  height: 60% !important;
+}
+
+.gbutton {
+  border: 1px solid #d2d5d8 !important;
+  color: black !important ;
+  display: flex !important;
+  border-radius: 4px !important;
+  font-weight: 700 !important;
+  font-family: YACgEQNAr7w O !important;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important;
+}
+.audio-recorder {
+  height: 34% !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.audio-recorder-mic {
+  height: 30px !important;
+  box-sizing: none !important;
+}
+.close-icon {
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+.close-icon:hover {
+  transform: rotate(180deg);
+}
+.bg-image {
+  background-image: url("./assets/SVGS/Animatedbg.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img.audio-recorder-mic {
+  filter: brightness(0) invert(1) hue-rotate(180deg) opacity(0);
+  position: relative;
+  z-index: 1;
+}
+span.audio-recorder-status + img.audio-recorder-options {
+  margin-right: 12px;
+}
+
+.otp-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.google-login-button span {
+  font-weight: 600 !important;
+}
